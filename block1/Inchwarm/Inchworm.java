@@ -1,4 +1,4 @@
-package block1.Inchwarm;
+package Inchwarm;
 
 public class Inchworm {
     public int lunchtime(int branch, int rest, int leaf) {
