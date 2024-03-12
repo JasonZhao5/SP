@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class InchWorm {
     public int lunchtime(int branch, int rest, int leaf) {
