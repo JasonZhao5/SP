@@ -32,24 +32,29 @@ public class PartySeats {
             }
             if (i < attendees.length / 2 + 1) {
                 if (0 == i % 2) {
-                    returnValues.add(boys.getFirst());
-                    boys.removeFirst();
+                    returnValues.add(boys.get(0));
+                    boys.remove(0);
                 } else {
-                    returnValues.add(girls.getFirst());
-                    girls.removeFirst();
+                    returnValues.add(girls.get(0));
+                    girls.remove(0);
                 }
             } else {
                 if (0 == i % 2) {
-                    returnValues.add(girls.getFirst());
-                    girls.removeFirst();
+                    returnValues.add(girls.get(0));
+                    girls.remove(0);
                 } else {
-                    returnValues.add(boys.getFirst());
-                    boys.removeFirst();
+                    returnValues.add(boys.get(0));
+                    boys.remove(0);
                 }
             }
         }
 
         return returnValues.toArray(new String[0]);
 
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new PartySeats().seating(new String[]{"BOB boy", "SUZIE girl", "DAVE boy", "JO girl",
+                "AL boy", "BOB boy", "CARLA girl", "DEBBIE girl"})));
     }
 }
