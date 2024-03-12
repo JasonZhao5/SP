@@ -53,8 +53,8 @@ ArrayList(size, add, addFirst, removeFirst, toArray), String(split), Arrays(sort
 *Explain the rationale behind your choice of individual practice.
 *Which area you focused on improving (eg. speed, fluency, algorithmic
 *design, coding)?
-*What are your goals for the next block of practice？
+*What are your goals for the next block1 of practice？
 
 I just choose the problems in order.
 I prefer to improve my speed and algorithmic design, which can make me more effective.
-My goal is to solve all problems in a short time in the next block of practice.
+My goal is to solve all problems in a short time in the next block1 of practice.
