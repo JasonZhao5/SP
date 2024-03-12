@@ -54,22 +54,37 @@ public class TestMain {
     }
 
     @Test
-    public void rugSizeTest(){
+    public void rugSizeTest() {
         System.out.println(new RugSizes().rugCount(48));
     }
 
     @Test
-    public void ThrowTheBallTest () {
+    public void ThrowTheBallTest() {
         System.out.println(new ThrowTheBall().timesThrown(
-                15,4,9
+                15, 4, 9
         ));
     }
 
     @Test
-    public void PartySeatsTest () {
+    public void PartySeatsTest() {
         System.out.println(Arrays.toString(new PartySeats().seating(new String[]
-                {"BOB boy","SUZIE girl","DAVE boy","JO girl",
-                        "AL boy","BOB boy","CARLA girl","DEBBIE girl"}
+                {"BOB boy", "SUZIE girl", "DAVE boy", "JO girl",
+                        "AL boy", "BOB boy", "CARLA girl", "DEBBIE girl"}
         )));
+    }
+
+    @Test
+    public void SquareOfDigitsTest() {
+        System.out.println(new SquareOfDigits().getMax(new String[]{"9785409507",
+                "2055103694",
+                "0861396761",
+                "3073207669",
+                "1233049493",
+                "2300248968",
+                "9769239548",
+                "7984130001",
+                "1670020095",
+                "8894239889",
+                "4053971072"}));
     }
 }
