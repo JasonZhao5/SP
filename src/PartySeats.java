@@ -26,7 +26,6 @@ public class PartySeats {
         ArrayList<String> returnValues = new ArrayList<>();
         returnValues.add("HOST");
 
-        Boolean nestIsBoy = false;
         for (int i = 1; i <= attendees.length; i++) {
             if (i == attendees.length / 2 + 1) {
                 returnValues.add("HOSTESS");
