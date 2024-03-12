@@ -19,33 +19,28 @@ public class PartySeats {
             }
         }
 
-        if (boys.size() != girls.size()) {
+        if (boys.size() != girls.size() || boys.size() % 2 != 0) {
             return new String[]{};
         }
 
         ArrayList<String> returnValues = new ArrayList<>();
         returnValues.add("HOST");
+        String next = "girl";
 
-        for (int i = 1; i <= attendees.length; i++) {
+        for (int i = 1; i <= attendees.length + 1; i++) {
             if (i == attendees.length / 2 + 1) {
                 returnValues.add("HOSTESS");
+                next = "boy";
+                continue;
             }
-            if (i < attendees.length / 2 + 1) {
-                if (0 == i % 2) {
-                    returnValues.add(boys.get(0));
-                    boys.remove(0);
-                } else {
-                    returnValues.add(girls.get(0));
-                    girls.remove(0);
-                }
+            if (next.equals("boy")) {
+                returnValues.add(boys.get(0));
+                boys.remove(0);
+                next = "girl";
             } else {
-                if (0 == i % 2) {
-                    returnValues.add(girls.get(0));
-                    girls.remove(0);
-                } else {
-                    returnValues.add(boys.get(0));
-                    boys.remove(0);
-                }
+                returnValues.add(girls.get(0));
+                girls.remove(0);
+                next = "boy";
             }
         }
 
@@ -54,7 +49,8 @@ public class PartySeats {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(new PartySeats().seating(new String[]{"BOB boy", "SUZIE girl", "DAVE boy", "JO girl",
-                "AL boy", "BOB boy", "CARLA girl", "DEBBIE girl"})));
+        System.out.println(Arrays.toString(new PartySeats().seating(new String[]{
+                "AM girl", "ROB boy", "JIM boy", "AM girl", "DAVE boy", "JO girl"
+        })));
     }
 }
