@@ -1,5 +1,5 @@
 *******************
-* Group practice * 
+* Group practice *
 *******************
 *List the problems you attempted, your scores so far for each
 *problem, and which Java API Classes and methods you used to solve
@@ -25,8 +25,7 @@ Math(max), String(charAt)
 *problem type?
 *What else did you learn from the group practice?
 
-In my opinion, InchWorm is easy, and ThrowTheBall and MooingCows
-could be medium ones.
+In my opinion, InchWorm is easy, and other problems could be medium ones.
 I'm quite confident in solving problems like InchWorm, but solving
 problems like ThrowTheBall and MooingCows could take me more time.
 
