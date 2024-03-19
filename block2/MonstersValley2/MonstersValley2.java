@@ -1,3 +1,5 @@
+package MonstersValley2;
+
 public class MonstersValley2 {
 
     public static int minimumPrice(int[] dread, int[] price) {
@@ -8,7 +10,7 @@ public class MonstersValley2 {
 
     }
 
-    public static int getMin(int[] dread, int[] price, int d, int p, int i) {
+    public static int getMin(int[] dread, int[] price, long d, int p, int i) {
 
         if (i == dread.length) {
             return p;
